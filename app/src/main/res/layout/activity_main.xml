@@ -34,7 +34,6 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/giffacial"
-        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -42,10 +41,12 @@
     <org.opencv.android.JavaCameraView
         android:id="@+id/cameraView"
         android:layout_width="0dp"
-        android:layout_height="510dp"
+        android:layout_height="0dp"
+        app:camera_id="front"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gifFace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
